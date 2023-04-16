@@ -156,6 +156,10 @@ footer p {
         font-weight: 500;
     }
 
+    .container {
+        left: 40px;
+    }
+
     footer p {
         font-size: 10px;
     }

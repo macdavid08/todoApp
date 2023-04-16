@@ -3,10 +3,11 @@
 const todoApp = {
     data() {
         return {
-            todos:[],
             newTodo: {
                 done: false
             },
+            todos:[],
+            
         }
         
     },
