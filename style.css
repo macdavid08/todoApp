@@ -11,9 +11,9 @@ body {
 
 #app {
     position: relative;
-    width: 500px;
-    max-width: 100%;
-    height: 400px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 .det {
     width: 30%;
@@ -29,7 +29,6 @@ body {
 .container{
     position: absolute;
     top: 30px;
-    left: 50%;
     background-color: rgba(124, 201, 248, 0.4);
     padding: 10px 20px;
     width: 80%;
@@ -125,9 +124,23 @@ button.add{
 
 }
 
-@media screen and (max-width: 700px) {
+footer{
+    width: 100%;
+    background-color: rgb(4, 4, 71);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-size: 12px;
+    margin: 5px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
     .det {
-        width: 45%;
+        width: 40%;
         padding: 10px 0;
     }
     
@@ -141,5 +154,9 @@ button.add{
         cursor: pointer;
         font-size: 12px;
         font-weight: 500;
+    }
+
+    footer p {
+        font-size: 10px;
     }
 }
