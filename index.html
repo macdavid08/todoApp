@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ddcecb68f9.js"></script>
+    <title>TodoApp </title> 
+</head>
+<body>
+    <main id="app">
+        <section class="container">
+            <div class="det">
+                <span><i class="fa-solid fa-list"></i></span>
+                <h3>Todo App</h3>
+            </div>
+           
+
+            <div 
+            v-for="todo in todos"
+            class="main-cont"
+            :class="{done : todo.done}"
+            @click="todo.done = !todo.done"
+            >
+                <div class="main ">
+                    <p>{{todo.text}}</p>
+                </div>
+            </div>
+            <button class="clear" @click="todos=[]" v-if="todos.length">Clear All</button>
+
+            <div class="div">
+                <input type="text" value="" placeholder="enter your text" v-model="newTodo.text">
+                <button class="add" @click="addTo()">Add</button>
+
+            </div>
+            <ul class="instructions" >
+                <li>Click the text to toggle between done and undone</li>
+                <li>Click the clear all button to clear</li>
+                <li>Click the add button to enter a new list after input</li>
+            </ul>
+            
+           
+        </section>
+
+        
+    </main>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: jost;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#app {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    height: 400px;
+}
+.det {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 0;
+    margin: auto;
+}
+
+.container{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    background-color: rgba(124, 201, 248, 0.4);
+    padding: 10px 20px;
+    width: 80%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+
+span i {
+    font-size: 20px;
+    color: navy;
+    display: inline;
+
+}
+
+.main-cont {
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.main{
+    margin: 5px;
+}
+
+.main p {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+    color: red;
+    font-weight: 500;
+}
+
+button.clear {
+    margin-top: 30px;
+    padding: 7px 10px;
+    background-color: rgb(245, 55, 55);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+}
+.div {
+    padding: 10px 0;
+    margin-top: 10px;
+
+}
+.div input{
+    width: 60%;
+    padding: 4px 5px;
+    border: solid rgba(83, 155, 222, 0.7);
+    border-radius: 3px ;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.div ::placeholder {
+    color: black;
+    opacity: 0.5;
+    border: none;
+    font-size: 12px;
+    font-weight: 300;
+   
+}
+
+button.add{
+    padding: 5px 10px;
+    background-color: navy;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.instructions{
+    margin-top: 30px;
+    box-sizing: border-box;
+    font-size: 12px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.instructions li {
+    text-align: left;
+    margin-top: 5px;
+    text-transform:none;
+    color: rgba(63, 60, 60, 0.8);
+
+}
+
+@media screen and (max-width: 700px) {
+    .det {
+        width: 45%;
+        padding: 10px 0;
+    }
+    
+    button.clear {
+        margin-top: 20px;
+        padding: 7px 10px;
+        background-color: rgb(245, 55, 55);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
